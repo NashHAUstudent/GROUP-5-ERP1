@@ -1,13 +1,9 @@
 from django.urls import path
 from . import views
-from .test_views import test_code_generation
 
 app_name = 'erp'
 
 urlpatterns = [
-    # Test Routes
-    path('test/codes/', test_code_generation, name='test_codes'),
-
     # Dashboard
     path('', views.dashboard, name='dashboard'),
     
